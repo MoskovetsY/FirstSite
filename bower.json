@@ -1,0 +1,16 @@
+{
+  "name": "FirstSite",
+  "version": "0.0.0",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Moskovets Yuriy"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  
+  "dependencies": {
+    "normalize-css": "~3.0.3"
+  }
+}
