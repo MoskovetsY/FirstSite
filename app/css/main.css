@@ -1,3 +1,310 @@
-html, body {
-	background-color: #ccc;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
+html {
+	height: 100%;
+}
+body {
+	height: 100%;
+	font:14px/18px 'Times New Roman', Times, sans-serif;
+	background-color: #fff;
+}
+ol, ul {
+	list-style: none;
+}
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+a, a:hover {
+	text-decoration: none;
+}
+.clearfix:before,
+.clearfix:after {
+   content: "";
+   display: table;
+}
+.clearfix:after {
+   clear: both;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+
+.text-right{
+	text-align: right;
+}
+
+.text-left{
+	text-align: left;
+}
+
+/*Это Header!!!*/
+
+.container{
+	width: 940px;
+	margin: 0 auto;
+}
+
+#header{
+	position: absolute;
+	top: 20px;
+	padding: 20px 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	}
+
+.logo{
+	float: left;
+}
+
+.nav{
+	float: right;
+	padding-top: 5px;
+}
+
+.nav li{
+	float: left;
+	margin-right: 40px;
+}
+
+.nav li:last-child {
+	margin-right: 0;
+}
+
+.nav a{
+	
+	text-transform: uppercase;
+	font: 14px Arial, sans-serif;
+	color: #ffffff;
+}
+
+.nav a:hover{
+	color: #fed136;
+}
+
+/* Это Home!!*/
+
+#home{
+	height: 700px;
+	padding-top: 278px;
+	text-align: center;
+	color: #ffffff;
+	background: #222 url(../img/MergedLayers.png) no-repeat center bottom;
+	background-size: cover;
+}
+
+#home h3{
+	font: 400 40px Arial;
+	margin-bottom: 40px;
+}
+
+#home h1{
+	font: 400 75px Arial;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+.btn{
+	padding: 20px 30px;
+	display: inline-block;
+	font: bold 24px/24px Arial, sans-serif;
+	background: #fed136;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.btn:hover{
+	background: #fac50b;
+	color: #fff;
+}
+
+/* Это Services*/
+
+.box{
+	padding: 120px;
+}
+
+#services{
+	text-align: center;
+}
+
+h2.title{
+	margin-bottom: 10px;
+	font: bold 40px/40px Arial, sans-serif;
+	color:#222;
+	text-transform: uppercase;
+}
+
+h5.title{
+	margin-bottom: 10px;
+	font: bold 18px/18px Arial, sans-serif;
+	color:#222;
+}
+
+.descr{
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #777;
+}
+
+.services-item{
+	float: left;
+	width: 33.33%;
+	padding: 90px 10px 0;
+}
+
+.services-item p{
+	font-size: 18px;
+	color: #777777;
+	line-height: 24px;
+}
+
+.commerce{
+	background: url(../img/commerce.png) no-repeat center top;
+}
+
+.responsive{
+	background: url(../img/responsive-web.png) no-repeat center top;
+}
+
+.security{
+	background: url(../img/web-security.png) no-repeat center top;
+}
+
+.services-wrap,
+.portfolio-wrap,
+.about-wrap{
+	padding-top: 70px;
+}
+
+/* Это Portfolio*/
+
+#portfolio{
+	text-align: center;
+	background: #f7f7f7;
+}
+
+.portfolio-item{
+	float: left;
+	width: 31%;
+	margin-right: 3.5%;
+	margin-bottom: 50px;
+	background: #ffffff;
+}
+.portfolio-item:nth-child(3n){
+	margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(1),
+.portfolio-item:nth-last-child(2),	
+.portfolio-item:nth-last-child(3){
+	margin-bottom: 0;
+}
+.p-item-footer{
+	padding: 25px 20px;
+}
+.p-item-footer h5.title{
+	margin-bottom: 4px;
+}
+
+/* Это About!!*/
+
+#about{
+	text-align: center;
+}
+
+.about-text{
+	width: 35%;
+	/*outline: 1px solid red;*/
+}
+
+.about-img{
+	width: 30%;
+	/*outline: 1px solid red;*/
+}
+
+.about-text h5{
+	line-height: 24px;
+}
+
+.about-text h5 span{
+	text-transform: uppercase;
+}
+
+.about-text p{
+	font-size: 16px;
+	line-height: 24px;
+	color: #777777;
+}
+
+.about-img:after{
+	content: '';
+	display: block;
+	margin: 0 auto;
+	height: 94px;
+	width: 3px;
+	background-color: #f1f1f1;
+}
+
+.about-img img{
+	display: inline-block;
+	width: 177px;
+	height: 177px;
+}
+
+.about-link{
+	display: inline-block;
+	width: 177px;
+	height: 177px;
+	border: 6px solid #f1f1f1;
+	border-radius: 50%;
+	background-color: #fed136;
+	font: bold 18px/30px Arial, sans-serif;
+	text-transform: uppercase;
+	color: #ffffff;
+	padding-top: 25px;
+	text-shadow: 0px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
